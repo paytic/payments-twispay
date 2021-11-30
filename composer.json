@@ -1,0 +1,36 @@
+{
+  "name": "paytic/payments-twispay",
+  "type": "library",
+  "license": "MIT",
+  "description": "Payments module for bytic library for twispay",
+  "keywords": [],
+  "homepage": "https://github.com/paytic/payments-twispay",
+  "authors": [
+    {
+      "name": "Gabriel Solomon",
+      "email": "hello@gabrielsolomon.ro"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Paytic\\Payments\\Twispay\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Paytic\\Payments\\Twispay\\Tests\\": "tests/src",
+      "Paytic\\Payments\\Twispay\\Tests\\Fixtures\\": "tests/fixtures"
+    }
+  },
+  "require": {
+    "php": "^7.2|^8.0",
+    "paytic/omnipay-twispay": "^2.0|^3.0"
+  },
+  "require-dev": {
+    "ext-zlib": "*",
+    "bytic/payments": "^1.0",
+    "paytic/payments-tests": "^1.0",
+    "bytic/form": "^1.0",
+    "vlucas/phpdotenv": "^4.0"
+  }
+}
